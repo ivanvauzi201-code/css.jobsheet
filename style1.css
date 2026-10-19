@@ -1,0 +1,62 @@
+/* Pengaturan Global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    line-height: 1.6;
+}
+
+/* Container Utama menggunakan Flexbox */
+.container-satu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 15px; /* Memberikan jarak antar kolom */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Styling untuk Sidebar Satu */
+.sidebar-satu {
+    flex: 1;
+    background-color: #ffefd5; /* Warna latar belakang menarik */
+    padding: 20px;
+    border-radius: 6px;
+    order: 1; /* Mengatur urutan tata letak pertama */
+}
+
+/* Styling untuk Kolom Utama / Artikel */
+.kolom-utama {
+    flex: 2;
+    background-color: #e0f7fa; /* Warna latar belakang artikel */
+    padding: 20px;
+    border-radius: 6px;
+    order: 2; /* Mengatur urutan tata letak kedua di tengah */
+}
+
+/* Styling untuk Sidebar Dua */
+.sidebar-dua {
+    flex: 1;
+    background-color: #ffe4e1; /* Warna latar belakang sidebar dua */
+    padding: 20px;
+    border-radius: 6px;
+    order: 3; /* Mengatur urutan tata letak ketiga */
+}
+
+/* Tambahan styling untuk navigasi link di sidebar */
+.sidebar-satu ul, .sidebar-satu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin: 8px 0;
+}
+
+.sidebar-satu a:hover {
+    color: #ff4500;
+    font-weight: bold;
+}
